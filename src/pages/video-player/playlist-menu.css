@@ -1,0 +1,93 @@
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+  width: 12rem;
+  border-radius: 20px;
+  background: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(200, 200, 200, 0.1),
+    transparent
+  );
+
+  border: 1px solid rgba(150, 150, 150, 0.2);
+}
+.menu::after {
+  position: absolute;
+  top: 100%;
+  left: 5.5rem;
+  height: 0;
+  width: 0;
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid grey;
+}
+.menu > .create-playlist {
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu > .playlist-heading {
+    position:absolute;
+    top:0;
+  width: 100%;
+  text-align: center;
+}
+.create-playlist > input {
+  width: 8rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  color: whitesmoke;
+  background: grey;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+}
+.create-playlist > input::placeholder {
+  color: white;
+  text-align: center;
+}
+.create-playlist > button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(200, 200, 200, 0.1),
+    transparent
+  );
+
+  border: 1px solid rgba(150, 150, 150, 0.2);
+}
+.menu > .playlist-list{
+    min-height: 13rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playlist-list> .playlist {
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
+  background: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(200, 200, 200, 0.1),
+    transparent
+  );
+
+  border: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+

@@ -1,0 +1,89 @@
+.player {
+  background: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(200, 200, 200, 0.1),
+    transparent
+  );
+
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  margin: 1rem auto;
+  width: 90%;
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.player > .video-playing-window {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+.video-playing-window > .reactPlayer {
+  height: 100%;
+  width: 100%;
+
+}
+.reactPlayer  iframe{
+    border-radius: 20px;
+}
+.player > .title {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.player > .information-and-options {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.information-and-options > .views {
+  color: grey;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.information-and-options > .buttons {
+  width: 50%;
+  display: flex;
+  color: grey;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttons > .button {
+  position:relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.button > svg {
+ 
+  fill: grey;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem;
+}
+svg:hover {
+  fill: white;
+}
+.button > .something{
+ display: none;
+position:absolute;
+background: #18181a;
+border-radius: 20px;
+top:-16rem;
+left: -2rem;
+}
+.button > .animate{
+  display: block;
+}
+.player > .line{
+    width:80%;
+    height:2px;
+    background-color: grey;
+}

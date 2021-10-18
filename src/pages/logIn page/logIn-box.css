@@ -1,0 +1,81 @@
+.Authentication{
+    color: grey;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    height: 70%;
+    width: 30%;
+    background: -webkit-linear-gradient(
+        top,
+        transparent,
+        rgba(200, 200, 200, 0.1),
+        transparent
+      );
+      border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+  }
+  .Authentication  >  input{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    height: 1.5rem;
+    width: 70%;
+  }
+  .Authentication > .signin{
+    height: 2rem;
+    width: 40%;
+   
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+  }
+  .Authentication > .other-options{
+    height: 50%;
+    width: 100%;
+  }
+  .other-options {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .other-options > .email-verification{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  .Authentication > .other-options > .email-verification > .login{
+   
+    margin-left: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+  .Authentication > .other-options > .signup{
+    height: 2rem;
+    display: block;
+    text-decoration: none;
+    padding-top: 0.2rem;
+    color: black;
+    text-align:  center;
+ 
+    width: 40%;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .Authentication > input:focus{
+    outline : none;
+    transform: scale(1.1);
+  }

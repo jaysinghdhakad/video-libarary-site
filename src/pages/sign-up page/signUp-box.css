@@ -1,0 +1,40 @@
+.signup-area{
+    color:grey;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    height: 70%;
+    width: 30%;
+    background: -webkit-linear-gradient(
+      top,
+      transparent,
+      rgba(200, 200, 200, 0.1),
+      transparent
+    );
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .signup-area > input{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    height: 1.5rem;
+    width: 70%;
+  }
+  .signup-area > button{
+    height: 2rem;
+    width: 40%;
+   
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+  }
+  .signup-area> input:focus{
+    outline : none;
+    transform: scale(1.1);
+  }

@@ -1,0 +1,58 @@
+.playlist-view {
+  margin: 5rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.playlist-view > .playlist {
+  width: 100%;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.playlist-name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+.playlist-songs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.song {
+  width: 15rem;
+  height: 14rem;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.song-thumbnail {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.song-name {
+  width: 100%;
+  text-align: center;
+  color: grey;
+}
+.song-delete {
+  color: grey;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.playlist-delete {
+  color: white;
+  margin-left: 0.5rem;
+}
