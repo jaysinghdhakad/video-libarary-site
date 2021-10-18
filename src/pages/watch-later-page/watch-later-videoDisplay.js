@@ -24,6 +24,7 @@ function WatchLaterVideos() {
   return loader ? (
     <Loader />
   ) : (
+    <><div className="heading">WATCHLATER</div>
     <div className="watch-later-videos">
       {state?.watchLaterVideos?.map((video) => {
         return (
@@ -45,6 +46,7 @@ function WatchLaterVideos() {
         );
       })}
     </div>
+    </>
   );
 }
 export default WatchLaterVideos;

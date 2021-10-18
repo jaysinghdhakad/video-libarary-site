@@ -56,3 +56,9 @@
   color: white;
   margin-left: 0.5rem;
 }
+.heading {
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: whitesmoke;
+}

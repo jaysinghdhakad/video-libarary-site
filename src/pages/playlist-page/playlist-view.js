@@ -19,6 +19,7 @@ function PlaylistViewer() {
   const { state, dispatch } = usePlaylist();
   console.log(state);
   return(loader? <Loader/>  :
+    <><div className="heading">PLAYLISTS</div>
     <div className="playlist-view">
       {state?.map((playlist) => {
         return (
@@ -71,6 +72,7 @@ function PlaylistViewer() {
         );
       })}
     </div>
+    </>
   );
 }
 export default PlaylistViewer;

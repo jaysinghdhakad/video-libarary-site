@@ -27,9 +27,13 @@ function LikeVideoDisplay() {
   return loader ? (
     <Loader />
   ) : (
+    <>
+      <div className="heading">LIKED VIDEOS</div>
     <div className="liked-video-display">
       {state?.likedVideos?.map((video) => {
         return (
+          
+        
           <div className="song">
             <img className="song-thumbnail" src={video.image} />
             <div className="song-name">{video.name}</div>
@@ -48,6 +52,8 @@ function LikeVideoDisplay() {
         );
       })}
     </div>
+    </>
+    
   );
 }
 export default LikeVideoDisplay;

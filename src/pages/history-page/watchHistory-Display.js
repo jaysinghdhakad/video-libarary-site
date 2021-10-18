@@ -19,6 +19,7 @@ function WatchHistory() {
   },[])
   console.log("this is history", state);
   return(loader? <Loader/>  :
+    <><div className="heading">HISTORY</div>
     <div className="watch-history-display">
       {state?.history?.map((video,index) => {
         return (
@@ -41,6 +42,7 @@ function WatchHistory() {
         );
       })}
     </div>
+    </>
   );
 }
 export default WatchHistory;
